@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F4EE6B0-8246-408B-90EC-112359DFE8F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Free.Ports.libjpeg</RootNamespace>
+    <AssemblyName>Free.Ports.libjpeg</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;C_ARITH_CODING_SUPPORTED; C_MULTISCAN_FILES_SUPPORTED; C_PROGRESSIVE_SUPPORTED; C_LOSSLESS_SUPPORTED; ENTROPY_OPT_SUPPORTED; INPUT_SMOOTHING_SUPPORTED; D_ARITH_CODING_SUPPORTED; D_MULTISCAN_FILES_SUPPORTED; D_PROGRESSIVE_SUPPORTED; D_LOSSLESS_SUPPORTED; SAVE_MARKERS_SUPPORTED; BLOCK_SMOOTHING_SUPPORTED; UPSAMPLE_MERGING_SUPPORTED; QUANT_1PASS_SUPPORTED; QUANT_2PASS_SUPPORTED;UPSCALING_CONTEXT;DCT_FLOAT_SUPPORTED;USE_UNSAFE_STUFF</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;C_ARITH_CODING_SUPPORTED; C_MULTISCAN_FILES_SUPPORTED; C_PROGRESSIVE_SUPPORTED; C_LOSSLESS_SUPPORTED; ENTROPY_OPT_SUPPORTED; INPUT_SMOOTHING_SUPPORTED; D_ARITH_CODING_SUPPORTED; D_MULTISCAN_FILES_SUPPORTED; D_PROGRESSIVE_SUPPORTED; D_LOSSLESS_SUPPORTED; SAVE_MARKERS_SUPPORTED; BLOCK_SMOOTHING_SUPPORTED; UPSAMPLE_MERGING_SUPPORTED; QUANT_1PASS_SUPPORTED; QUANT_2PASS_SUPPORTED;UPSCALING_CONTEXT;DCT_FLOAT_SUPPORTED;USE_UNSAFE_STUFF</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exif.cs" />
+    <Compile Include="jaricom.cs" />
+    <Compile Include="jcapimin.cs" />
+    <Compile Include="jcapistd.cs" />
+    <Compile Include="jcarith.cs" />
+    <Compile Include="jccoefct.cs" />
+    <Compile Include="jccolor.cs" />
+    <Compile Include="jcdctmgr.cs" />
+    <Compile Include="jcdiffct.cs" />
+    <Compile Include="jchuff.cs" />
+    <Compile Include="jcinit.cs" />
+    <Compile Include="jclhuff.cs" />
+    <Compile Include="jclossls.cs" />
+    <Compile Include="jclossy.cs" />
+    <Compile Include="jcmainct.cs" />
+    <Compile Include="jcmarker.cs" />
+    <Compile Include="jcmaster.cs" />
+    <Compile Include="jcodec.cs" />
+    <Compile Include="jcomapi.cs" />
+    <Compile Include="jcparam.cs" />
+    <Compile Include="jcphuff.cs" />
+    <Compile Include="jcpred.cs" />
+    <Compile Include="jcprepct.cs" />
+    <Compile Include="jcsample.cs" />
+    <Compile Include="jcscale.cs" />
+    <Compile Include="jcshuff.cs" />
+    <Compile Include="jdapimin.cs" />
+    <Compile Include="jdapistd.cs" />
+    <Compile Include="jdarith.cs" />
+    <Compile Include="jdatadst.cs" />
+    <Compile Include="jdatasrc.cs" />
+    <Compile Include="jdcoefct.cs" />
+    <Compile Include="jdcolor.cs" />
+    <Compile Include="jdct.cs" />
+    <Compile Include="jddctmgr.cs" />
+    <Compile Include="jddiffct.cs" />
+    <Compile Include="jdhuff.cs" />
+    <Compile Include="jdinput.cs" />
+    <Compile Include="jdlhuff.cs" />
+    <Compile Include="jdlossls.cs" />
+    <Compile Include="jdlossy.cs" />
+    <Compile Include="jdmainct.cs" />
+    <Compile Include="jdmarker.cs" />
+    <Compile Include="jdmaster.cs" />
+    <Compile Include="jdmerge.cs" />
+    <Compile Include="jdphuff.cs" />
+    <Compile Include="jdpostct.cs" />
+    <Compile Include="jdpred.cs" />
+    <Compile Include="jdsample.cs" />
+    <Compile Include="jdscale.cs" />
+    <Compile Include="jdshuff.cs" />
+    <Compile Include="jerror.cs" />
+    <Compile Include="jfdctflt.cs" />
+    <Compile Include="jfdctfst.cs" />
+    <Compile Include="jidctfst.cs" />
+    <Compile Include="jlossls.cs" />
+    <Compile Include="jlossy.cs" />
+    <Compile Include="jmemmgr.cs" />
+    <Compile Include="jmorecfg.cs" />
+    <Compile Include="jpegint.cs" />
+    <Compile Include="jpeglib.cs" />
+    <Compile Include="jquant1.cs" />
+    <Compile Include="jquant2.cs" />
+    <Compile Include="jutils.cs" />
+    <Compile Include="jversion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libjpeg.txt" />
+    <Content Include="License.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
